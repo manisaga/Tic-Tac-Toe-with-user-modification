@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <h1>Press a key to Start the Game</h1>
+        <p class="player1"></p>
+        <p class="player2"></p>
+        <div class="Board">
+            <table>
+                <tr>
+                    <td><div class="square row1 col1 diag1"></div></td>
+                    <td><div class="square row1 col2"></div></td>
+                    <td><div class="square row1 col3 diag2"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="square row2 col1"></div></td>
+                    <td><div class="square row2 col2 diag1 diag2"></div></td>
+                    <td><div class="square row2 col3"></div></td>                   
+                </tr>
+                <tr>
+                    <td><div class="square row3 col1 diag2"></div></td>
+                    <td><div class="square row3 col2"></div></td>
+                    <td><div class="square row3 col3 diag1"></div></td>                   
+                </tr>               
+            </table>
+        </div>
+        <div class="scorecard">
+            <div class="score1">
+                <h2 class="PlayerName1">Player 1</h2>
+                <br>
+                <img src="images/player1.png" alt="" class="player_img">
+                <h2 class="WinsPlayer1">0</h2>
+            </div>
+            <div class="score2">
+                <h2 class="PlayerName2">Player 2</h2>
+                <br>
+                <img src="images/player2.png" alt="" class="player_img">
+                <h2 class="WinsPlayer2">0</h2>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="jsonObject.json" type="text/JSON"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
